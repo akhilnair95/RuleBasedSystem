@@ -1,0 +1,105 @@
+Documentation for rules.xml file :
+------------------------------------------
+
+1.	<Root> ... </Root>  This is the root node
+
+2.	Rule node
+
+	Define a new rule as:
+
+	<Rule id = "#rule_number" >
+		<Reason>
+			.........
+		</Reason>	
+
+		<Result>
+			.........
+		</Result>
+	<Rule>
+
+	Rule node has two children : Reason and Result
+		for a rule p->q 
+			p is the Reason and q is the Result
+
+3.	Reason node
+	
+		The Hypothesis that if true makes Result Statements true
+		Syntax:	<Reason>
+				<Hypothesis type = "....">
+				</Hypothesis>
+			</Reason>
+
+4. 	Hypothesis node
+
+		Nodes forming the elements of Reason node.
+		A Hypothesis node can be of two types :
+			a. Simple (A simple statement eg : (x likes y) ) 
+				Syntax : <Hypothesis Type="Simple">
+						<Statement>.............</Statement>
+					</Hypothesis>  
+			
+			b.Complex (A set of hypothesis connected by an 'And' or 'Or')
+				Syntax : <Hypothesis Type="Complex" Gate = "(And/Or)">
+						<Hypothesis> .... </Hypothesis>
+						......................
+						<Hypothesis> .... </Hypothesis>
+					</Hypothesis>		
+5.	Result node
+		
+		A set of statement nodes that are evaluated to true if the corresponding Reason Hypothesis evaluates to true	
+		Syntax: <Result>
+				<Statement>.........</Statement>
+				................
+				<Statement>.........</Statement>			
+			</Result>					
+			
+
+Example 
+----------------------------------------------
+ if a rule is as follows :
+
+Rule #4
+---------
+ 
+	if (
+		( ( x is a good guy ) and ( y is a bad guy ) )
+		or
+		( x harms y )
+	   )
+	then
+		(y hates x)
+	
+
+is converted as follows :
+
+
+<Rule id ="4">
+		<Reason>
+
+			<Hypothesis Type="Complex" Gate ="Or">
+				
+				<Hypothesis Type="Complex" Gate ="And">
+				
+					<Hypothesis Type="Simple">
+						<Statement>:x is a good guy</Statement>
+					</Hypothesis>
+				
+					<Hypothesis Type="Simple">
+						<Statement>:y is a bad guy</Statement>
+					</Hypothesis>
+					
+					</Hypothesis>
+				</Hypothesis>
+
+				<Hypothesis Type="Simple">
+						<Statement>:x harms :y</Statement>
+					</Hypothesis>
+				
+			</Hypothesis>
+		</Reason>
+	
+		<Result>
+			<Statement>:y hates :x</Statement>
+		</Result>
+	</Rule>	
+
