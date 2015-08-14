@@ -17,7 +17,7 @@ The current assertions.txt and rules.xml are set to the values for an exercise w
 How to use:
 -------------------------
 
-I have given the code that can be exported to Eclipse. So for people using eclipse, download and import to eclipse and you are ready to go.
+I have given the code that can be exported to Eclipse. So for people using eclipse, download the RuleBasedSystem folder and import to eclipse and you are ready to go.
 
 For others
 
@@ -31,8 +31,7 @@ For others
 
 5.open your terminal and type java Rule_based_system
 
-
-Note : The documentation for rules.xml is given in the file ruledoc.txt
-
 6.Type the statement you want to test and you are ready to go.
 
+
+Note : The documentation for rules.xml is given in the file ruledoc.txt
