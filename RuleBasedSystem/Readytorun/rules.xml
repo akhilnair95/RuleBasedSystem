@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<Root>
+	<Rule id ="1">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x is ambitious</Statement>
+					</Hypothesis>
+				
+		
+					<Hypothesis Type="Simple">
+						<Statement>:x is a squib</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+		</Reason>
+		
+		<Result>
+			<Statement>:x has a bad term</Statement>
+		</Result>
+	</Rule>
+	
+	<Rule id ="2">
+		<Reason>
+			<Hypothesis Type="Simple">
+				<Statement>:x lives in Gryffindor tower</Statement>
+			</Hypothesis>
+		</Reason>
+	
+		<Result>
+			<Statement>:x is a protogonist</Statement>
+		</Result>
+	</Rule>
+	
+	<Rule id ="3">
+		<Reason>
+			<Hypothesis Type="Simple">
+				<Statement>:x lives in Slytherin dungeon</Statement>
+			</Hypothesis>
+		</Reason>
+	
+		<Result>
+			<Statement>:x is a villian</Statement>
+			<Statement>:x is ambitious</Statement>
+		</Result>
+	</Rule>
+	
+	<Rule id ="4">
+		<Reason>
+			<Hypothesis Type="Complex" Gate ="And">
+				<Hypothesis Type="Simple">
+					<Statement>:x is ambitious</Statement>
+				</Hypothesis>
+				
+				<Hypothesis Type="Complex" Gate="Or">
+					<Hypothesis Type="Simple">
+						<Statement>:x is a protogonist</Statement>
+					</Hypothesis>
+					
+					<Hypothesis Type="Simple">
+						<Statement>:x is a villian</Statement>
+					</Hypothesis>
+					
+				</Hypothesis>
+			</Hypothesis>
+		</Reason>
+	
+		<Result>
+			<Statement>:x studies a lot</Statement>
+		</Result>
+	</Rule>
+	
+	<Rule id ="5">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x is a protogonist</Statement>
+					</Hypothesis>
+				
+		
+					<Hypothesis Type="Simple">
+						<Statement>:x studies a lot</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+		</Reason>
+		
+		<Result>
+			<Statement>:x becomes Hermione's friend</Statement>
+		</Result>
+	</Rule>
+	
+	<Rule id ="6">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x snogs :y</Statement>
+					</Hypothesis>
+				
+		
+					<Hypothesis Type="Simple">
+						<Statement>:x lives in Gryffindor tower</Statement>
+					</Hypothesis>
+					
+					<Hypothesis Type="Simple">
+						<Statement>:y is a villian</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+			
+			
+		</Reason>
+		
+		<Result>
+			<Statement>:x has a bad term</Statement>
+		</Result>
+	</Rule>
+	
+	
+	
+		<Rule id ="7">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x is a mulphor</Statement>
+					</Hypothesis>
+					
+					<Hypothesis Type="Simple">
+						<Statement>:y is a squib</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+			
+			
+		</Reason>
+		
+		<Result>
+			<Statement>:x snogs :y</Statement>
+		</Result>
+	</Rule>
+	
+	
+	<Rule id ="7">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x has a bad term</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+			
+			
+		</Reason>
+		
+		<Result>
+			<Statement>:x loses</Statement>
+		</Result>
+	</Rule>
+
+<Rule id ="8">
+		<Reason>
+			<Hypothesis Type="Complex" Gate = "And">
+			
+					<Hypothesis Type="Simple">
+						<Statement>:x harms :y</Statement>
+					</Hypothesis>
+					
+					<Hypothesis Type="Simple">
+						<Statement>:x is a bad person</Statement>
+					</Hypothesis>
+					
+			</Hypothesis>
+			
+			
+		</Reason>
+		
+		<Result>
+			<Statement>:y hates :x</Statement>
+		</Result>
+	</Rule>
+
+
+<Rule id ="9">
+		<Reason>
+					<Hypothesis Type="Simple">
+						<Statement>:x does bad things </Statement>
+					</Hypothesis>
+			
+			
+		</Reason>
+		
+		<Result>
+			<Statement>:x is a bad person</Statement>
+		</Result>
+	</Rule>
+
+</Root>
