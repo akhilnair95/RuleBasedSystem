@@ -1,8 +1,7 @@
-# RuleBasedSystem
-A java program that implements a rule based expert system
 
 Rule Based System:
 ---------------------
+A java program that implements a rule based expert system
 
 This rule based system tests the truth value of a statement based on the assertions given in Assertions.txt and the set of rules(defined in xml) given in the file rules.xml
 
@@ -16,11 +15,17 @@ How to use:
 -------------------------
 
 I have given the code that can be exported to Eclipse. So for people using eclipse, download and import to eclipse and you are ready to go.
+
 For others
+
 1.Download the code 
+
 2.Unzip the folder 
+
 3.Go to /RuleBasedSystem/Readytorun/
+
 4.Change the contents of Assertions.txt and rules.xml
+
 5.open your terminal and type java Rule_based_system
 
 
