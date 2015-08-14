@@ -285,5 +285,5 @@ class Bindage_class{
 		
 	}
 	
-}class Pointer_class{
+}
 
