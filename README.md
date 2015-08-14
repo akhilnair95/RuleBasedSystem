@@ -29,7 +29,7 @@ For others
 
 4.Change the contents of Assertions.txt and rules.xml
 
-5.open your terminal and type java Rule_based_system
+5.open your terminal and type javac Rule_based_system.java and then type java Rule_based_system
 
 6.Type the statement you want to test and you are ready to go.
 
