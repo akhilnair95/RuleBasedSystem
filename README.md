@@ -6,9 +6,12 @@ A java program that implements a rule based expert system
 This rule based system tests the truth value of a statement based on the assertions given in Assertions.txt and the set of rules(defined in xml) given in the file rules.xml
 
 This is a project work for a course that I took in AI from MIT open courseware
+
 Ref:https://www.youtube.com/watch?v=leXa7EKUPFk&index=3&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+
 I have used backward chaining methodology to imlement this system.
 
+The current assertions.txt and rules.xml are set to the values for an exercise who details can be seen at https://www.youtube.com/watch?v=iusTmgQyZ44&index=23&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
 
 
 How to use:
