@@ -7,11 +7,9 @@ This rule based system tests the truth value of a statement based on the asserti
 
 This is a project work for a course that I took in AI from MIT open courseware
 
-Ref:https://www.youtube.com/watch?v=leXa7EKUPFk&index=3&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
-
 I have used backward chaining methodology to imlement this system.
 
-The current assertions.txt and rules.xml are set to the values for an exercise who details can be seen at https://www.youtube.com/watch?v=iusTmgQyZ44&index=23&list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+The current assertions.txt and rules.xml are set to the values for an exercise who details can be seen at goo.gl/HkzZNT
 
 
 How to use:
@@ -28,6 +26,7 @@ For others
 3.Go to /RuleBasedSystem/Readytorun/
 
 4.Change the contents of Assertions.txt and rules.xml
+(For syntax of rules.xml, see xmldoc.txt file)
 
 5.open your terminal and type javac Rule_based_system.java and then type java Rule_based_system
 
